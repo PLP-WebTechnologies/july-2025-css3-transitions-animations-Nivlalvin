@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive CSS & JS Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Bringing Web Pages to Life</h1>
+
+  <!-- Part 1: CSS animations (hover + keyframes) -->
+  <button class="btn">Hover Me</button>
+
+  <!-- Part 2 + 3: JS functions trigger CSS animations -->
+  <div id="box" class="box"></div>
+  <button onclick="toggleAnimation('box', 'move')">Animate Box</button>
+
+  <!-- Modal demo -->
+  <button onclick="openModal()">Open Modal</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="greeting"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

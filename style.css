@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f4f7fa;
+}
+
+/* Title animation using keyframes */
+.title {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Button hover transition */
+.btn {
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #0057b8;
+  transform: scale(1.1);
+}
+
+/* Box for animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background: #ff5733;
+  border-radius: 8px;
+  transition: transform 1s ease-in-out;
+}
+
+.box.move {
+  transform: translateX(200px) rotate(180deg);
+}
+
+/* Modal with animation */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+button{
+    padding: 12px 24px;
+    margin: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0077ff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0057b8;
+    transform: scale(1.1);
+}
